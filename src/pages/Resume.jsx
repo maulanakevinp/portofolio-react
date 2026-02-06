@@ -54,6 +54,33 @@ export default function Resume() {
             </div>
           </div>
 
+          {/* Skills */}
+          <div className="mb-20">
+            <h2 className="text-4xl font-bold text-center mb-12">Core Skills</h2>
+            <div className="flex flex-col gap-4">
+              {Skills.map((skill, index) => (
+                <div key={index} className="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4 w-full">{skill.category}</h3>
+                  <div className="flex flex-wrap gap-4">
+                    {skill.skills.map((item, idx) => (
+                      <div 
+                        key={idx} 
+                        className="flex flex-col items-center w-20"
+                      >
+                        <img 
+                          src={item.icon} 
+                          alt={item.name} 
+                          className="h-12 mb-2 filter group-hover:brightness-110 transition"
+                        />
+                        <span className="text-center text-sm text-gray-700">{item.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Education */}
           <div className="mb-20">
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Education</h2>
@@ -80,62 +107,8 @@ export default function Resume() {
             </div>
           </div>
 
-          {/* Skills & Contact */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Skills */}
-            <div className="bg-gray-50 rounded-lg p-8 shadow-md">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Skills</h2>
-              <div className="flex flex-wrap gap-4">
-                {Skills.map((skill, index) => (
-                  <div key={index} className="group relative">
-                    <img 
-                      src={skill.icon} 
-                      alt={skill.name}
-                      className="w-16 h-16 object-contain hover:scale-110 transition-transform"
-                      title={skill.name}
-                    />
-                    <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
-                      {skill.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Contact Info */}
-            <div className="bg-gray-50 rounded-lg p-8 shadow-md">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Info</h2>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-4">
-                  <i className="text-2xl text-blue-600 ion-android-calendar"></i>
-                  <span className="text-gray-700">08/05/1999</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <i className="text-2xl text-blue-600 ion-person"></i>
-                  <span className="text-gray-700">Maulana Kevin Pradana, S.Kom., MTA</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <i className="text-2xl text-blue-600 ion-ios-telephone"></i>
-                  <a href="https://wa.me/6282331571857" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
-                    +62 823-3157-1857
-                  </a>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <i className="text-2xl text-blue-600 ion-email"></i>
-                  <a href="mailto:maulanakevinpradana@gmail.com" className="text-blue-600 hover:text-blue-800">
-                    maulanakevinpradana@gmail.com
-                  </a>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <i className="text-2xl text-blue-600 ion-ios-location"></i>
-                  <span className="text-gray-700">Jember, East Java, Indonesia</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Certifications */}
-          <div className="mt-20">
+          <div className="">
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Certifications</h2>
             <div className="space-y-6">
               {Certificate.map((cert, index) => (
