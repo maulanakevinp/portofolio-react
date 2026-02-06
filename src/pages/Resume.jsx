@@ -134,9 +134,9 @@ export default function Resume() {
             </div>
           </div>
 
-          {/* Awards & Certifications */}
+          {/* Certifications */}
           <div className="mt-20">
-            <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Awards & Certifications</h2>
+            <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Certifications</h2>
             <div className="space-y-6">
               {Certificate.map((cert, index) => (
                 <div key={index} className="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition">

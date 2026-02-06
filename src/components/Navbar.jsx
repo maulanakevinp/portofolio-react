@@ -53,7 +53,8 @@ export default function Navbar() {
             </li> */}
             <li>
               <Link
-                to="/"
+                to="/storage/Resume - Maulana Kevin Pradana.pdf"
+                target='_blank'
                 className={`${
                   isActive('/') ? 'text-blue-600 font-semibold' : 'text-gray-600'
                 } hover:text-blue-600 transition`}
@@ -91,7 +92,8 @@ export default function Navbar() {
             </li> */}
             <li>
               <Link
-                to="/"
+                to="/storage/Resume - Maulana Kevin Pradana.pdf"
+                target='_blank'
                 onClick={() => setIsOpen(false)}
                 className={`block py-2 ${
                   isActive('/') ? 'text-blue-600 font-semibold' : 'text-gray-600'
