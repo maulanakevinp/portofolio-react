@@ -13,7 +13,7 @@ export default function Resume() {
           <div className="text-center">
             <div 
               className="w-56 h-56 mx-auto mb-8 rounded-full bg-cover bg-center shadow-2xl"
-              style={{ backgroundImage: "url('/img/avatars/512x512.jpg')", backgroundPositionX: '-25px' }}
+              style={{ backgroundImage: "url('/img/avatars/512x512.jpg')" }}
             />
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Fullstack / Software Engineer with 5+ years of experience in Laravel, ReactJS, microservices, SSO (SAML, Google SSO), and DevOps. Experienced in building enterprise systems for education, fintech, and government sectors. Familiar with Docker, CI/CD pipelines, Linux server administration, and API-driven architecture.
