@@ -23,6 +23,9 @@ const WorkExperience = [
     tasks: [
       "Built 'Not So Sin', an order management system for tracking domestic and international purchase requests, customer balance management, and shipment tracking.",
       "Developed a loan application and credit assessment system for BPR Bank, enabling staff to survey and evaluate customer eligibility for loan approval.",
+      "Built a Credit Monitoring System to track and evaluate loan performance.",
+      "Created Management Information Systems for retail and jewelry businesses.",
+      "Integrated REST APIs and implemented secure authentication flows."
     ],
   },
   {
