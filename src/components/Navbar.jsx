@@ -53,13 +53,11 @@ export default function Navbar() {
             </li> */}
             <li>
               <Link
-                to="/storage/Resume - Maulana Kevin Pradana.pdf"
+                to="/storage/CV - Maulana Kevin Pradana.pdf"
                 target='_blank'
-                className={`${
-                  isActive('/') ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                } hover:text-blue-600 transition`}
+                className={`text-gray-600 hover:text-blue-600 transition`}
               >
-                Resume
+                CV
               </Link>
             </li>
           </ul>
@@ -92,14 +90,12 @@ export default function Navbar() {
             </li> */}
             <li>
               <Link
-                to="/storage/Resume - Maulana Kevin Pradana.pdf"
+                to="/storage/CV - Maulana Kevin Pradana.pdf"
                 target='_blank'
                 onClick={() => setIsOpen(false)}
-                className={`block py-2 ${
-                  isActive('/') ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                } hover:text-blue-600 transition`}
+                className={`block py-2 text-gray-600 hover:text-blue-600 transition`}
               >
-                Resume
+                CV
               </Link>
             </li>
           </ul>
