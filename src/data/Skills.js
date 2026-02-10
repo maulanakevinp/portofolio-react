@@ -45,7 +45,7 @@ const Skills = [
     ],
   },
   {
-    category: "DevOps & Tools",
+    category: "Others & Tools",
     skills: [
       { name: "Docker", icon: "/img/icons/docker.png" },
       { name: "Nginx", icon: "/img/icons/nginx.png" },
@@ -56,14 +56,10 @@ const Skills = [
       { name: "GitHub", icon: "/img/icons/github.svg" },
       { name: "GitLab", icon: "/img/icons/gitlab.webp" },
       { name: "CI/CD Pipelines", icon: "/img/icons/cicd.png" },
-    ],
-  },
-  {
-    category: "Others",
-    skills: [
       { name: "Microservices Architecture", icon: "/img/icons/microservices.png" },
       { name: "Authentication & Authorization", icon: "/img/icons/auth.png" },
       { name: "GIS (Leaflet.js)", icon: "/img/icons/leaflet.png" },
+      { name: "FrankenPHP", icon: "/img/icons/frankenphp.png" },
     ],
   },
 ];

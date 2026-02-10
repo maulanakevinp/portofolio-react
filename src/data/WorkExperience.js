@@ -10,7 +10,7 @@ const WorkExperience = [
       "Built a centralized Single Sign-On (SSO) platform using SAML and Google SSO to unify authentication across internal applications.",
       "Developed core institutional systems including Admission System, Academic System, E-Office (integrated with BSrE e-Sign), Employee Management System, and Daily Performance Management System.",
 			"Implemented MinIO object storage for secure internal document and file management.",
-			"Built a Room Booking System and administrative dashboards to streamline internal operations.",
+			"Collaborate with cross-functional teams to analyze requirements and deliver features on time.",
 			"Managed production deployments using Docker, CI/CD pipelines, Nginx, HTTPS, and Linux servers."
     ],
   },
