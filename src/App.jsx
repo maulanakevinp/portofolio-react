@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import MeetingAndFeedback from './pages/MeetingAndFeedback';
+import EnglishForTechLead from './pages/EnglishForTechLead';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Resume />} />
             <Route path="/meetings-and-feedback" element={<MeetingAndFeedback />} />
+            <Route path="/english-for-tech-lead" element={<EnglishForTechLead />} />
             {/* <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} /> */}
           </Routes>
