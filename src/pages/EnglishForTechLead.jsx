@@ -13,7 +13,7 @@ function EnglishForTechLead() {
         </p>
         <p className="mt-10 text-gray-700">
           <b>C. 1 Conflict resolution message</b><br />
-          Two team members disagree -> you respond.<br /><br />
+          Two team members disagree {`->`} you respond.<br /><br />
           This is a great idea, but it's very vulnerable to hackers. <br /><br/>
           Perharps, we can build our own Content Management System for all department or university websites, which would be more secure because we built it. And of course, we'd have to teach the department admin team how to use it.<br /><br />
           However, we could bring in someone who's an expert in WordPress to teach the department admin team how to use WordPress and secure it from hackers. Building our own content management system would definitely take longer, and there's still a lot of work to be done.
