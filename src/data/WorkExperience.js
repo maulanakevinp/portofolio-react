@@ -18,7 +18,7 @@ const WorkExperience = [
     title: "Full Stack Developer",
     company: "Katalis Kreasi Teknologi",
     link: "https://kataliskreasi.com",
-    period: "06/2022 - Present",
+    period: "06/2022 - 03/2025",
     worktype: "Freelance",
     tasks: [
       "Built 'Not So Sin', an order management system for tracking domestic and international purchase requests, customer balance management, and shipment tracking.",

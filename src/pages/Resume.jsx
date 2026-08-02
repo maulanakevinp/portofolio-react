@@ -8,7 +8,7 @@ export default function Resume() {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 border-b">
+      <section className="py-20 bg-linear-to-br from-blue-50 to-indigo-100 border-b">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div 
@@ -16,7 +16,7 @@ export default function Resume() {
               style={{ backgroundImage: "url('/img/avatars/512x512.jpg')" }}
             />
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Full Stack / Software Engineer with 5+ years of experience in Laravel, ReactJS, microservices, SSO (SAML, Google SSO), and DevOps. Experienced in building enterprise systems for education, fintech, and government sectors. Familiar with Docker, CI/CD pipelines, Linux server administration, and API-driven architecture.
+              Full Stack / Software Engineer with 7+ years of experience in Laravel, ReactJS, microservices, SSO (SAML, Google SSO), and DevOps. Experienced in building enterprise systems for education, fintech, and government sectors. Familiar with Docker, CI/CD pipelines, Linux server administration, and API-driven architecture.
             </p>
           </div>
         </div>
@@ -100,7 +100,10 @@ export default function Resume() {
                         {edu.school}
                       </a>
                     </div>
-                    <span className="text-gray-600 mt-2 md:mt-0">{edu.period}</span>
+                    <div className="flex flex-col items-end">
+                      <span className="text-gray-600 mt-2 md:mt-0">{edu.period}</span>
+                      <span className="text-gray-600 mt-2 md:mt-0">GPA: {edu.gpa}</span>
+                    </div>
                   </div>
                 </div>
               ))}
