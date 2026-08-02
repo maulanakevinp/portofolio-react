@@ -4,6 +4,7 @@ const Skills = [
     skills: [
       { name: "PHP", icon: "/img/icons/php.png" },
       { name: "JavaScript", icon: "/img/icons/js.png" },
+      { name: "TypeScript", icon: "/img/icons/Typescript.svg" },
       { name: "Java", icon: "/img/icons/java.png" },
       { name: "Dart", icon: "/img/icons/dart.png" },
     ],
