@@ -8,17 +8,17 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-white shadow-md">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
-          <Link to="/" className="text-xl font-bold text-gray-800 hover:text-blue-600 transition">
-            Maulana Kevin Pradana
+    <nav className="w-full backdrop-blur border-b border-[#5EEAD4]">
+      <div className="container mx-auto max-w-7xl px-4">
+        <div className="w-full flex justify-between items-center py-4">
+          <Link to="/" className="text-xl font-bold text-white transition">
+            Maulana Kevin Pradana — Software Engineer
           </Link>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-600 hover:text-gray-800 focus:outline-none"
+            className="cursor-pointer md:hidden text-white hover:text-white/90 focus:outline-none"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isOpen ? (
@@ -31,12 +31,12 @@ export default function Navbar() {
 
           {/* Desktop menu */}
           <ul className="hidden md:flex space-x-8">
-            {/* <li>
+            <li>
               <Link
                 to="/"
                 className={`${
-                  isActive('/') ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                } hover:text-blue-600 transition`}
+                  isActive('/') ? 'text-[#5EEAD4] font-semibold' : 'text-white'
+                } hover:text-[#5EEAD4] transition`}
               >
                 Home
               </Link>
@@ -45,17 +45,17 @@ export default function Navbar() {
               <Link
                 to="/projects"
                 className={`${
-                  isActive('/projects') ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                } hover:text-blue-600 transition`}
+                  isActive('/projects') ? 'text-[#5EEAD4] font-semibold' : 'text-white'
+                } hover:text-[#5EEAD4] transition`}
               >
                 Projects
               </Link>
-            </li> */}
+            </li>
             <li>
               <Link
                 to="/storage/CV - Maulana Kevin Pradana.pdf"
                 target='_blank'
-                className={`text-gray-600 hover:text-blue-600 transition`}
+                className={`text-white hover:text-[#5EEAD4] transition`}
               >
                 CV
               </Link>
@@ -66,13 +66,13 @@ export default function Navbar() {
         {/* Mobile menu */}
         {isOpen && (
           <ul className="md:hidden pb-4 space-y-2">
-            {/* <li>
+            <li>
               <Link
                 to="/"
                 onClick={() => setIsOpen(false)}
                 className={`block py-2 ${
-                  isActive('/') ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                } hover:text-blue-600 transition`}
+                  isActive('/') ? 'text-[#5EEAD4] font-semibold' : 'text-white'
+                } hover:text-[#5EEAD4] transition`}
               >
                 Home
               </Link>
@@ -82,18 +82,18 @@ export default function Navbar() {
                 to="/projects"
                 onClick={() => setIsOpen(false)}
                 className={`block py-2 ${
-                  isActive('/projects') ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                } hover:text-blue-600 transition`}
+                  isActive('/projects') ? 'text-[#5EEAD4] font-semibold' : 'text-white'
+                } hover:text-[#5EEAD4] transition`}
               >
                 Projects
               </Link>
-            </li> */}
+            </li>
             <li>
               <Link
                 to="/storage/CV - Maulana Kevin Pradana.pdf"
                 target='_blank'
                 onClick={() => setIsOpen(false)}
-                className={`block py-2 text-gray-600 hover:text-blue-600 transition`}
+                className={`block py-2 text-white hover:text-[#5EEAD4] transition`}
               >
                 CV
               </Link>

@@ -2,25 +2,13 @@ import WorkExperience from "../data/WorkExperience";
 import Skills from "../data/Skills";
 import Education from "../data/Education";
 import Certificate from "../data/Certificate";
+import HeroSection from "../components/HeroSection";
 
 export default function Resume() {
 
   return (
     <div className="pt-16">
-      {/* Hero Section */}
-      <section className="py-20 bg-linear-to-br from-blue-50 to-indigo-100 border-b">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <div 
-              className="w-56 h-56 mx-auto mb-8 rounded-full bg-cover bg-center shadow-2xl"
-              style={{ backgroundImage: "url('/img/avatars/512x512.jpg')" }}
-            />
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Full Stack / Software Engineer with 7+ years of experience in Laravel, ReactJS, microservices, SSO (SAML, Google SSO), and DevOps. Experienced in building enterprise systems for education, fintech, and government sectors. Familiar with Docker, CI/CD pipelines, Linux server administration, and API-driven architecture.
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
