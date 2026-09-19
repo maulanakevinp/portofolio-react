@@ -65,4 +65,86 @@ export const Projects = [
     tech: ["Laravel", "frankenPHP", "React", "JavaScript", "TailwindCSS", "Docker", "SAML", "MinIO", "SQL Server", "WebSocket", "CI/CD Pipelines"],
     url: "https://backoffice.uiii.ac.id"
   },
+  {
+    title: 'Not So Sin (NSS)',
+    desc: 'A personal shopper business management platform for managing requested products, customer orders, and purchasing processes.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL", "Pusher"],
+    url: "https://my.notsosin.live"
+  },
+  {
+    title: 'MK Jewelry',
+    desc: 'An information system for managing custom jewelry orders, production processes, and manufacturing workflows.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL", "Pusher"],
+  },
+  {
+    title: 'DPMD - Dinas Pemberdayaan Masyarakat dan Desa Kab. Jember',
+    desc: 'An information system website supporting data management, public services, and administration for the Jember Regency Community and Village Empowerment Office.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "SQL Server"],
+    url: "https://dpmd.jemberkab.go.id"
+  },
+  {
+    title: 'ERP - Lab Populer',
+    desc: 'An ERP system integrating operations, inventory, sales, and administrative processes for PT. Populer Sarana Medika.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'Desa Lengkong',
+    desc: 'An integrated village information system presenting the profile, news, services, and public information of Lengkong Village, Jember Regency.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'Desa Sumber Gading',
+    desc: 'An integrated village information system presenting the profile, news, services, and public information of Sumber Gading Village, Bondowoso Regency.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'Desa Arjasa',
+    desc: 'An integrated village information system presenting the profile, news, services, and public information of Arjasa Village, Jember Regency.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'Black Orange CCTV',
+    desc: 'An online CCTV store for PT. Hitam Oranye Indonesia with WhatsApp-integrated ordering.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'PGN Indonesia',
+    desc: 'An information system for managing work permit applications and approvals at PT Perusahaan Gas Negara Tbk.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'BwiJuaraTrip',
+    desc: 'A travel ticket sales platform with online payments integrated through the iPaymu API.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'SDUNEJ',
+    desc: 'An education and information platform supporting the KKN Back to Village program for UNEJ students.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'UKMK ETALASE',
+    desc: 'A profile website for the ETALASE Student Arts Activity Unit, featuring its activities, work, and organizational information.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'BosGerobak',
+    desc: 'An online store with WhatsApp-integrated product ordering.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'SPOT',
+    desc: 'A geographic information system for displaying and managing location data interactively using Leaflet.js.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL", "Leaflet.JS"],
+  },
+  {
+    title: 'PRIMAPERS',
+    desc: 'A profile website for the PRIMAPERS UNEJ student organization with a blog system for publishing organizational news and articles.',
+    tech: ["Laravel", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
+  {
+    title: 'XYLODECORATION',
+    desc: 'An online store for decoration services and products with WhatsApp-integrated ordering.',
+    tech: ["Codeigniter", "jQuery", "JavaScript", "Bootstrap", "MySQL"],
+  },
 ];
