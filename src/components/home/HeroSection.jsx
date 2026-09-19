@@ -31,8 +31,8 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="w-full flex flex-col md:flex-row gap-5 py-10">
-      <div className="flex-1 flex flex-col gap-8">
+    <section className="w-full flex flex-col md:flex-row gap-5">
+      <div className="flex-1 flex flex-col gap-8 pt-10">
         <div className="flex">
           <div className=" flex flex-row items-center gap-3 border border-dashed border-teal-300 bg-teal-500/8 p-2">
             <span className="rounded-full size-2 bg-teal-300 animate-pulse" />
@@ -54,14 +54,14 @@ export default function HeroSection() {
         <div className="flex flex-col md:flex-row gap-5">
           <Link
             to="/projects"
-            className="py-4 px-8 bg-sky-400 text-black text-center hover:shadow-[#63d4fb] hover:bg-[#63d4fb] hover:border-sky-300 border duration-200"
+            className="py-4 px-8 bg-sky-400 text-black text-center hover:shadow-sm hover:shadow-[#63d4fb] hover:bg-[#63d4fb] hover:border-sky-300 border duration-200"
           >
             See Projects
           </Link>
           <Link
             to="https://github.com/maulanakevinp"
             target="_blank"
-            className="flex flex-row gap-3 items-center py-4 px-8 border bg-teal-300 border-teal-700 justify-center text-gray-700 hover:shadow-teal-300 duration-200 hover:border-teal-300"
+            className="flex flex-row gap-3 items-center py-4 px-8 border bg-teal-300 border-teal-700 justify-center text-gray-700  hover:shadow-sm hover:shadow-teal-300 duration-200 hover:border-teal-300"
           >
             <img 
               src="/img/icons/github.svg"
