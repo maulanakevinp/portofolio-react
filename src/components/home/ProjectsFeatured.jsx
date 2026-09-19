@@ -57,7 +57,7 @@ export default function ProjectsFeatured() {
             <p className="mb-5">{item.desc}</p>
             <div className="flex flex-wrap gap-1">
               {item.tech.map((stack, index) => (
-                <span key={index} className="border border-teal-700 px-2 py-1 text-center flex items-center text-xs">
+                <span key={index} className="border border-teal-700 px-2 py-1 text-center flex items-center text-xs text-teal-300">
                   {stack}
                 </span>
               ))}

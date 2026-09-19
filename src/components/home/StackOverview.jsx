@@ -37,9 +37,9 @@ export default function StackOverview() {
         {techs.map((item, key) => (
           <Card key={key}>
             <h4 className="text-white mb-3">{item.title}</h4>
-            <div className="flex flex-wrap gap-1">
+            <div className="flex flex-wrap gap-2">
               {item.stacks.map((stack, index) => (
-                <span key={index} className="border border-teal-700 px-2 py-1 text-center flex items-center text-xs">
+                <span key={index} className="border border-teal-700 px-2 py-1 text-center flex items-center text-teal-300 text-sm">
                   {stack}
                 </span>
               ))}
@@ -49,9 +49,9 @@ export default function StackOverview() {
       </div>
       <Card>
         <h4 className="text-white mb-3">{others.title}</h4>
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-2">
           {others.stacks.map((stack, index) => (
-            <span key={index} className="border border-teal-700 px-2 py-1 text-center flex items-center text-xs">
+            <span key={index} className="border border-teal-700 px-2 py-1 text-center flex items-center text-teal-300 text-sm">
               {stack}
             </span>
           ))}
