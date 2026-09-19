@@ -52,12 +52,12 @@ export default function HeroSection() {
           Experienced in building enterprise systems for education, fintech, and government sectors. Familiar with Docker, CI/CD pipelines, Linux server administration, and API-driven architecture.
         </p>
         <div className="flex flex-col md:flex-row gap-5">
-          <Link
+          {/* <Link
             to="/projects"
             className="py-4 px-8 bg-sky-400 text-black text-center hover:shadow-sm hover:shadow-[#63d4fb] hover:bg-[#63d4fb] hover:border-sky-300 border duration-200"
           >
             See Projects
-          </Link>
+          </Link> */}
           <Link
             to="https://github.com/maulanakevinp"
             target="_blank"
