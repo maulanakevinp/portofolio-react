@@ -1,11 +1,37 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const isActive = (path) => location.pathname === path;
+  useEffect(() => {
+    if (!location.hash) return;
+
+    const section = document.getElementById(location.hash.slice(1));
+    section?.scrollIntoView({ behavior: 'smooth' });
+  }, [location.pathname, location.hash]);
+
+  const isActive = (path) => `${location.pathname}${location.hash}` === path;
+  const menu = [
+    {
+      url: "/",
+      name: "Home"
+    },
+    {
+      url: "/#tech",
+      name: "Tech"
+    },
+    {
+      url: "/#projects",
+      name: "Projects"
+    },
+    {
+      url: "/storage/CV - Maulana Kevin Pradana.pdf",
+      name: "CV",
+      target: "_blank"
+    },
+  ];
 
   return (
     <nav className="w-full backdrop-blur border-b border-teal-700">
@@ -37,73 +63,39 @@ export default function Navbar() {
 
           {/* Desktop menu */}
           <ul className="hidden md:flex space-x-8">
-            <li>
-              <Link
-                to="/"
-                className={`${
-                  isActive('/') ? 'text-teal-300 font-semibold' : 'text-white'
-                } hover:text-teal-300 duration-100 group flex flex-row gap-2`}
-              >
-                <span className={`group-hover:block hidden`}>//</span> Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/projects"
-                className={`${
-                  isActive('/projects') ? 'text-teal-300 font-semibold' : 'text-white'
-                } hover:text-teal-300 duration-100 group flex flex-row gap-2`}
-              >
-                <span className={`group-hover:block hidden`}>//</span> Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/storage/CV - Maulana Kevin Pradana.pdf"
-                target='_blank'
-                className={`text-white hover:text-teal-300 duration-100 group flex flex-row gap-2`}
-              >
-                <span className={`group-hover:block hidden`}>//</span> CV
-              </Link>
-            </li>
+            {menu.map((item, key) => (
+              <li key={key}>
+                <Link
+                  to={item.url}
+                  target={item.target ?? "_self"}
+                  className={`${
+                    isActive(item.url) ? 'text-teal-300 font-semibold' : 'text-white'
+                  } hover:text-teal-300 duration-100 group flex flex-row gap-2`}
+                >
+                  <span className={`group-hover:block hidden`}>//</span> {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Mobile menu */}
         {isOpen && (
           <ul className="md:hidden pb-4 space-y-2">
-            <li>
-              <Link
-                to="/"
-                onClick={() => setIsOpen(false)}
-                className={`block py-2 ${
-                  isActive('/') ? 'text-teal-300 font-semibold' : 'text-white'
-                } hover:text-teal-300 transition`}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/projects"
-                onClick={() => setIsOpen(false)}
-                className={`block py-2 ${
-                  isActive('/projects') ? 'text-teal-300 font-semibold' : 'text-white'
-                } hover:text-teal-300 transition`}
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/storage/CV - Maulana Kevin Pradana.pdf"
-                target='_blank'
-                onClick={() => setIsOpen(false)}
-                className={`block py-2 text-white hover:text-teal-300 transition`}
-              >
-                CV
-              </Link>
-            </li>
+            {menu.map((item, key) => (
+              <li key={key}>
+                <Link
+                  to={item.url}
+                  target={item.target ?? "_self"}
+                  onClick={() => setIsOpen(false)}
+                  className={`block py-2 ${
+                    isActive(item.url) ? 'text-teal-300 font-semibold' : 'text-white'
+                  } hover:text-teal-300 transition`}
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         )}
       </div>

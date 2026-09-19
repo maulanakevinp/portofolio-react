@@ -24,7 +24,7 @@ export default function ProjectsFeatured() {
   ];
 
   return (
-    <section className="w-full flex flex-col gap-6">
+    <section id="projects" className="w-full flex flex-col gap-6">
       <div className="flex flex-col md:flex-row md:justify-between md:items-center">
         <div className="flex flex-col gap-6">
           <div className="flex flex-row items-center gap-3">
@@ -33,12 +33,12 @@ export default function ProjectsFeatured() {
           </div>
           <h1 className="text-white text-2xl font-bold">Some Recent Projects</h1>
         </div>
-        <Link
+        {/* <Link
           to="/projects"
           className="px-8 py-4 border border-slate-500 text-white duration-200 hover:shadow-md hover:shadow-teal-700 hover:border-teal-300 hover:-translate-y-1.5 ease-out transition-all"
         >
           See All Projects
-        </Link>
+        </Link> */}
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-5">
         {projects.map((item, key) => (

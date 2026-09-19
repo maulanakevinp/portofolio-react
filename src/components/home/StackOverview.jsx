@@ -27,7 +27,7 @@ export default function StackOverview() {
 
 
   return (
-    <section className="w-full flex flex-col gap-6">
+    <section id="tech" className="w-full flex flex-col gap-6">
       <div className="flex flex-row items-center gap-3">
         <hr className="w-5 text-teal-300"/>
         <p className="text-teal-300 text-xs">STACK.OVERVIEW</p>
