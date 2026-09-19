@@ -33,7 +33,7 @@ export default function StackOverview() {
         <p className="text-teal-300 text-xs">STACK.OVERVIEW</p>
       </div>
       <h1 className="text-white text-2xl font-bold">Tech Stack & Tools</h1>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {techs.map((item, key) => (
           <Card key={key}>
             <h4 className="text-white mb-3">{item.title}</h4>

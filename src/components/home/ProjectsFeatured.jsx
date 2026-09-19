@@ -40,7 +40,7 @@ export default function ProjectsFeatured() {
           See All Projects
         </Link>
       </div>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-5">
         {projects.map((item, key) => (
           <Card key={key}>
             <p className="text-xs mb-6">{item.tag}</p>
