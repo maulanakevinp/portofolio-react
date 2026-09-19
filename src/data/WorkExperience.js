@@ -1,8 +1,8 @@
-const WorkExperience = [
+export const WorkExperience = [
   {
-    title: "Full Stack Developer",
+    title: "Software Engineer",
     company: "Universitas Islam Internasional Indonesia",
-    link: "https://uiii.ac.id",
+    url: "https://uiii.ac.id",
     period: "11/2022 - Present",
     worktype: "Fulltime",
     tasks: [
@@ -17,7 +17,7 @@ const WorkExperience = [
   {
     title: "Full Stack Developer",
     company: "Katalis Kreasi Teknologi",
-    link: "https://kataliskreasi.com",
+    url: "https://kataliskreasi.com",
     period: "06/2022 - 03/2025",
     worktype: "Freelance",
     tasks: [
@@ -31,7 +31,6 @@ const WorkExperience = [
   {
     title: "Full Stack Developer",
     company: "Itematik",
-    link: "https://itematik.co.id",
     period: "06/2022 - 11/2022",
     worktype: "Fulltime",
     tasks: [
@@ -42,7 +41,7 @@ const WorkExperience = [
   {
     title: "Full Stack Developer",
     company: "Asean Fintech Group",
-    link: "https://aseanfintechgroup.com",
+    url: "https://aseanfintechgroup.com",
     period: "04/2022 - 05/2022",
     worktype: "Contract",
     tasks: [
@@ -53,7 +52,7 @@ const WorkExperience = [
   {
     title: "IT Support - Programmer",
     company: "Dinas Pemberdayaan Masyarakat dan Desa Kab. Jember",
-    link: "https://dpmd.jemberkab.go.id",
+    url: "https://dpmd.jemberkab.go.id",
     period: "08/2021 - 04/2022",
     worktype: "Fulltime",
     tasks: [
@@ -65,7 +64,6 @@ const WorkExperience = [
   {
     title: "Web Developer",
     company: "Garuda Development",
-    link: "https://garudev.id",
     period: "07/2020 - 08/2021",
     worktype: "Parttime",
     tasks: [
@@ -76,7 +74,7 @@ const WorkExperience = [
   {
     title: "Full Stack Developer",
     company: "Freelance (Self Employed)",
-    link: "/projects",
+    url: "/projects",
     period: "07/2019 - Present",
     worktype: "Freelance",
     tasks: [
@@ -88,5 +86,3 @@ const WorkExperience = [
     ],
   },
 ];
-
-export default WorkExperience;

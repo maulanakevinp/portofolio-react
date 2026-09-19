@@ -1,6 +1,6 @@
-function PresentationAndPublicSpeaking() {
+export default function Page() {
   return (
-    <div className="pt-20 container mx-auto px-4 py-20">
+    <div className="px-4 relative mx-auto max-w-7xl flex flex-col gap-16 mt-10">
       <div className="">
         <h3 className="font-bold text-xl">Presentation and Public Speaking in Tech</h3>
         <video controls className="w-full h-auto mt-4">
@@ -11,5 +11,3 @@ function PresentationAndPublicSpeaking() {
     </div>
   );
 }
-
-export default PresentationAndPublicSpeaking;

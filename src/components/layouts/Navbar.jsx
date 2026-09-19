@@ -26,6 +26,10 @@ export default function Navbar() {
       name: "Projects"
     },
     {
+      url: "/#work-experiences",
+      name: "Work Experiences"
+    },
+    {
       url: "/storage/CV - Maulana Kevin Pradana.pdf",
       name: "CV",
       target: "_blank"
