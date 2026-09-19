@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Badge from "../fragments/Badge";
 
 const roleText = "software_engineer.init()";
 
@@ -33,12 +34,7 @@ export default function HeroSection() {
   return (
     <section className="w-full flex flex-col md:flex-row gap-5">
       <div className="flex-1 flex flex-col gap-8 pt-10">
-        <div className="flex">
-          <div className=" flex flex-row items-center gap-3 border border-dashed border-teal-300 bg-teal-500/8 p-2">
-            <span className="rounded-full size-2 bg-teal-300 animate-pulse" />
-            <span className="text-xs text-teal-300 tracking-widest">STATUS: OPEN TO WORK</span>
-          </div>
-        </div>
+        <Badge text="STATUS: OPEN TO WORK" />
         <p className="text-white text-7xl font-bold font-space-grotesk">Maulana Kevin Pradana</p>
         <div className="flex flex-row gap-2">
           <span>{">"}</span>
@@ -52,12 +48,12 @@ export default function HeroSection() {
           Experienced in building enterprise systems for education, fintech, and government sectors. Familiar with Docker, CI/CD pipelines, Linux server administration, and API-driven architecture.
         </p>
         <div className="flex flex-col md:flex-row gap-5">
-          {/* <Link
+          <Link
             to="/projects"
             className="py-4 px-8 bg-sky-400 text-black text-center hover:shadow-sm hover:shadow-[#63d4fb] hover:bg-[#63d4fb] hover:border-sky-300 border duration-200"
           >
             See Projects
-          </Link> */}
+          </Link>
           <Link
             to="https://github.com/maulanakevinp"
             target="_blank"

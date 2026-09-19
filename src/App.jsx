@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Projects from './pages/Projects';
-import Resume from './pages/Resume';
+import ProjectPage from './pages/projects/Page';
 import MeetingAndFeedback from './pages/MeetingAndFeedback';
 import EnglishForTechLead from './pages/EnglishForTechLead';
 import PresentationAndPublicSpeaking from './pages/PresentationAndPublicSpeaking';
-import Page from './pages/Page';
+import HomePage from './pages/Page';
 import Navbar from './components/layouts/Navbar';
 import Footer from './components/layouts/Footer';
 
@@ -15,12 +14,11 @@ function App() {
         <Navbar />
         <main className="grow">
           <Routes>
-            <Route path="/" element={<Page />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/meetings-and-feedback" element={<MeetingAndFeedback />} />
             <Route path="/english-for-tech-lead" element={<EnglishForTechLead />} />
             <Route path="/presentation-and-public-speaking-in-tech" element={<PresentationAndPublicSpeaking />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/projects" element={<ProjectPage />} />
           </Routes>
         </main>
         <Footer />

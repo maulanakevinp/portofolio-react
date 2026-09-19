@@ -1,7 +1,7 @@
-const Skills = [
+export const TechStacks = [
   {
     category: "Programming Languages",
-    skills: [
+    stacks: [
       { name: "PHP", icon: "/img/icons/php.png" },
       { name: "JavaScript", icon: "/img/icons/js.png" },
       { name: "TypeScript", icon: "/img/icons/Typescript.svg" },
@@ -11,7 +11,7 @@ const Skills = [
   },
   {
     category: "Frameworks & Libraries",
-    skills: [
+    stacks: [
       { name: "Laravel", icon: "/img/icons/laravel.png" },
       { name: "React JS", icon: "/img/icons/react.png" },
       { name: "TailwindCSS", icon: "/img/icons/tailwindcss.png" },
@@ -22,15 +22,8 @@ const Skills = [
     ],
   },
   {
-    category: "Operating Systems",
-    skills: [
-      { name: "Linux", icon: "/img/icons/linux.webp" },
-      { name: "Windows", icon: "/img/icons/windows.png" },
-    ],
-  },
-  {
     category: "Databases",
-    skills: [
+    stacks: [
       { name: "Microsoft SQL Server", icon: "/img/icons/mssql.png" },
       { name: "MySQL", icon: "/img/icons/mysql.png" },
       { name: "PostgreSQL", icon: "/img/icons/postgre.png" },
@@ -38,7 +31,7 @@ const Skills = [
   },
   {
     category: "APIs & Integration",
-    skills: [
+    stacks: [
       { name: "RESTful API", icon: "/img/icons/restful-api.png" },
       { name: "SSO (Single Sign-On, SAML)", icon: "/img/icons/sso.png" },
       { name: "WhatsApp API", icon: "/img/icons/wa-api.png" },
@@ -47,7 +40,7 @@ const Skills = [
   },
   {
     category: "Others & Tools",
-    skills: [
+    stacks: [
       { name: "Docker", icon: "/img/icons/docker.png" },
       { name: "Nginx", icon: "/img/icons/nginx.png" },
       { name: "Apache2", icon: "/img/icons/apache2.png" },
@@ -64,25 +57,3 @@ const Skills = [
     ],
   },
 ];
-
-// Flat list of all skills for easy access
-export const FlatSkills = [
-  { name: "HTML", icon: "/img/icons/html.png" },
-  { name: "CSS", icon: "/img/icons/css.png" },
-  { name: "JavaScript", icon: "/img/icons/js.png" },
-  { name: "PHP", icon: "/img/icons/php.png" },
-  { name: "Java", icon: "/img/icons/java.png" },
-  { name: "MySQL", icon: "/img/icons/mysql.png" },
-  { name: "Microsoft SQL Server", icon: "/img/icons/mssql.png" },
-  { name: "PostgreSQL", icon: "/img/icons/postgre.png" },
-  { name: "cPanel", icon: "/img/icons/cpanel.png" },
-  { name: "DevOps", icon: "/img/icons/devops.png" },
-  { name: "GitLab CI/CD", icon: "/img/icons/gitlab-ci-cd.png" },
-  { name: "CodeIgniter", icon: "/img/icons/ci.png" },
-  { name: "Laravel", icon: "/img/icons/laravel.png" },
-  { name: "Bootstrap", icon: "/img/icons/bootstrap.png" },
-  { name: "React JS", icon: "/img/icons/react.png" },
-  { name: "Flutter", icon: "/img/icons/flutter.png" },
-];
-
-export default Skills;

@@ -12,7 +12,6 @@ export default function Navbar() {
     section?.scrollIntoView({ behavior: 'smooth' });
   }, [location.pathname, location.hash]);
 
-  const isActive = (path) => `${location.pathname}${location.hash}` === path;
   const menu = [
     {
       url: "/",
@@ -68,9 +67,7 @@ export default function Navbar() {
                 <Link
                   to={item.url}
                   target={item.target ?? "_self"}
-                  className={`${
-                    isActive(item.url) ? 'text-teal-300 font-semibold' : 'text-white'
-                  } hover:text-teal-300 duration-100 group flex flex-row gap-2`}
+                  className={`text-white hover:text-teal-300 duration-100 group flex flex-row gap-2`}
                 >
                   <span className={`group-hover:block hidden`}>//</span> {item.name}
                 </Link>
@@ -88,9 +85,7 @@ export default function Navbar() {
                   to={item.url}
                   target={item.target ?? "_self"}
                   onClick={() => setIsOpen(false)}
-                  className={`block py-2 ${
-                    isActive(item.url) ? 'text-teal-300 font-semibold' : 'text-white'
-                  } hover:text-teal-300 transition`}
+                  className={`block py-2 text-white hover:text-teal-300 transition`}
                 >
                   {item.name}
                 </Link>
