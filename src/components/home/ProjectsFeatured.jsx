@@ -7,19 +7,22 @@ export default function ProjectsFeatured() {
       tag: "PROJECT // 01",
       title: "UIII — Single Sign On (SSO)",
       desc: "A centralized authentication platform that unifies user access across UIII's internal and external applications through SAML and Google SSO.",
-      tech: ["Laravel", "frankenPHP", "Vanilla JavaScript", "TailwindCSS", "Docker", "SAML", "MinIO", "SQL Server", "CI/CD Pipelines"]
+      tech: ["Laravel", "frankenPHP", "Vanilla JavaScript", "TailwindCSS", "Docker", "SAML", "MinIO", "SQL Server", "CI/CD Pipelines"],
+      url: "https://sso.uiii.ac.id"
     },
     {
       tag: "PROJECT // 02",
       title: "UIII — Academic Information System (UAIS)",
       desc: "An academic information system for managing student data, course processes, and UIII's academic services in one integrated platform.",
-      tech: ["Laravel", "frankenPHP", "React", "JavaScript", "TailwindCSS", "Docker", "SAML", "MinIO", "SQL Server", "WebSocket", "CI/CD Pipelines"]
+      tech: ["Laravel", "frankenPHP", "React", "JavaScript", "TailwindCSS", "Docker", "SAML", "MinIO", "SQL Server", "WebSocket", "CI/CD Pipelines"],
+      url: "https://uais.uiii.ac.id"
     },
     {
       tag: "PROJECT // 03",
       title: "UIII — Dormitory",
       desc: "A UIII dormitory management system for managing residents, rooms, service requests, and operational communication in one central platform.",
-      tech: ["Laravel", "frankenPHP", "React", "TypeScript", "TailwindCSS", "Docker", "SAML", "MinIO", "SQL Server", "WebSocket", "CI/CD Pipelines"]
+      tech: ["Laravel", "frankenPHP", "React", "TypeScript", "TailwindCSS", "Docker", "SAML", "MinIO", "SQL Server", "WebSocket", "CI/CD Pipelines"],
+      url: "https://dormitory.uiii.ac.id"
     },
   ];
 
@@ -44,7 +47,13 @@ export default function ProjectsFeatured() {
         {projects.map((item, key) => (
           <Card key={key}>
             <p className="text-xs mb-6">{item.tag}</p>
-            <h4 className="text-lg font-bold text-white mb-6">{item.title}</h4>
+            <Link
+              to={item.url}
+              target="_blank"
+              title={`Go To ${item.title}`}
+            >
+              <h4 className="text-lg font-bold text-white hover:-translate-y-1 transition-all duration-200 mb-6">{item.title}</h4>
+            </Link>
             <p className="mb-5">{item.desc}</p>
             <div className="flex flex-wrap gap-1">
               {item.tech.map((stack, index) => (
