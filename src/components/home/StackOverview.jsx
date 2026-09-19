@@ -1,3 +1,5 @@
+import Card from "../fragments/Card";
+
 export default function StackOverview() {
   const techs = [
     {
@@ -26,25 +28,35 @@ export default function StackOverview() {
 
   return (
     <section className="w-full flex flex-col gap-6">
-      <p className="text-teal-300 text-xs">-- STACK.OVERVIEW</p>
+      <div className="flex flex-row items-center gap-3">
+        <hr className="w-5 text-teal-300"/>
+        <p className="text-teal-300 text-xs">STACK.OVERVIEW</p>
+      </div>
       <h1 className="text-white text-2xl font-bold">Tech Stack & Tools</h1>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-        {techs.map(item => (
-          <Card item={item} />
+        {techs.map((item, key) => (
+          <Card key={key}>
+            <h4 className="text-white mb-3">{item.title}</h4>
+            <div className="flex flex-wrap gap-1">
+              {item.stacks.map((stack, index) => (
+                <span key={index} className="border border-teal-700 px-2 py-1 text-center flex items-center text-xs">
+                  {stack}
+                </span>
+              ))}
+            </div>
+          </Card>
         ))}
       </div>
-      <Card item={others} />
+      <Card>
+        <h4 className="text-white mb-3">{others.title}</h4>
+        <div className="flex flex-wrap gap-1">
+          {others.stacks.map((stack, index) => (
+            <span key={index} className="border border-teal-700 px-2 py-1 text-center flex items-center text-xs">
+              {stack}
+            </span>
+          ))}
+        </div>
+      </Card>
     </section>
   )
 }
-
-const Card = ({item}) => (
-  <div className="border border-teal-700 p-6 hover:bg-teal-700/30 hover:border-teal-300 duration-200 hover:shadow-teal-300 relative hover:-top-1">
-    <h4 className="text-white mb-3">{item.title}</h4>
-    <div className="flex flex-wrap gap-1">
-      {item.stacks.map(stack => (
-        <span className="border border-teal-700 px-2 py-1 text-center flex items-center text-xs">{stack}</span>
-      ))}
-    </div>
-  </div>
-)

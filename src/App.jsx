@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import MeetingAndFeedback from './pages/MeetingAndFeedback';
 import EnglishForTechLead from './pages/EnglishForTechLead';
 import PresentationAndPublicSpeaking from './pages/PresentationAndPublicSpeaking';
 import Page from './pages/Page';
+import Navbar from './components/layouts/Navbar';
+import Footer from './components/layouts/Footer';
 
 function App() {
   return (

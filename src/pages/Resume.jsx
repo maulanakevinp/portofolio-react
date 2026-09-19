@@ -2,7 +2,7 @@ import WorkExperience from "../data/WorkExperience";
 import Skills from "../data/Skills";
 import Education from "../data/Education";
 import Certificate from "../data/Certificate";
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/home/HeroSection";
 
 export default function Resume() {
 
