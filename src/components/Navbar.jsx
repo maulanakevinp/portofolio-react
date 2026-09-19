@@ -8,12 +8,18 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="w-full backdrop-blur border-b border-[#5EEAD4]">
+    <nav className="w-full backdrop-blur border-b border-teal-700">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="w-full flex justify-between items-center py-4">
-          <Link to="/" className="text-xl font-bold text-white transition">
-            Maulana Kevin Pradana — Software Engineer
-          </Link>
+          <div className='flex flex-row items-center gap-3'>
+            <div className="box-border size-5 border border-sky-300 relative rotate-45 flex items-center justify-center">
+              <div className="size-3 bg-teal-300"/>
+            </div>
+            <Link to="/" className="font-bold text-white transition">
+              Maulana Kevin Pradana — Software Engineer
+            </Link>
+            <span className="text-teal-300 text-xs">/dev</span>
+          </div>
 
           {/* Mobile menu button */}
           <button
@@ -35,29 +41,29 @@ export default function Navbar() {
               <Link
                 to="/"
                 className={`${
-                  isActive('/') ? 'text-[#5EEAD4] font-semibold' : 'text-white'
-                } hover:text-[#5EEAD4] transition`}
+                  isActive('/') ? 'text-teal-300 font-semibold' : 'text-white'
+                } hover:text-teal-300 duration-100 group flex flex-row gap-2`}
               >
-                Home
+                <span className={`group-hover:block hidden`}>//</span> Home
               </Link>
             </li>
             <li>
               <Link
                 to="/projects"
                 className={`${
-                  isActive('/projects') ? 'text-[#5EEAD4] font-semibold' : 'text-white'
-                } hover:text-[#5EEAD4] transition`}
+                  isActive('/projects') ? 'text-teal-300 font-semibold' : 'text-white'
+                } hover:text-teal-300 duration-100 group flex flex-row gap-2`}
               >
-                Projects
+                <span className={`group-hover:block hidden`}>//</span> Projects
               </Link>
             </li>
             <li>
               <Link
                 to="/storage/CV - Maulana Kevin Pradana.pdf"
                 target='_blank'
-                className={`text-white hover:text-[#5EEAD4] transition`}
+                className={`text-white hover:text-teal-300 duration-100 group flex flex-row gap-2`}
               >
-                CV
+                <span className={`group-hover:block hidden`}>//</span> CV
               </Link>
             </li>
           </ul>
@@ -71,8 +77,8 @@ export default function Navbar() {
                 to="/"
                 onClick={() => setIsOpen(false)}
                 className={`block py-2 ${
-                  isActive('/') ? 'text-[#5EEAD4] font-semibold' : 'text-white'
-                } hover:text-[#5EEAD4] transition`}
+                  isActive('/') ? 'text-teal-300 font-semibold' : 'text-white'
+                } hover:text-teal-300 transition`}
               >
                 Home
               </Link>
@@ -82,8 +88,8 @@ export default function Navbar() {
                 to="/projects"
                 onClick={() => setIsOpen(false)}
                 className={`block py-2 ${
-                  isActive('/projects') ? 'text-[#5EEAD4] font-semibold' : 'text-white'
-                } hover:text-[#5EEAD4] transition`}
+                  isActive('/projects') ? 'text-teal-300 font-semibold' : 'text-white'
+                } hover:text-teal-300 transition`}
               >
                 Projects
               </Link>
@@ -93,7 +99,7 @@ export default function Navbar() {
                 to="/storage/CV - Maulana Kevin Pradana.pdf"
                 target='_blank'
                 onClick={() => setIsOpen(false)}
-                className={`block py-2 text-white hover:text-[#5EEAD4] transition`}
+                className={`block py-2 text-white hover:text-teal-300 transition`}
               >
                 CV
               </Link>

@@ -9,7 +9,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-gray-900 text-white py-12">
+    <footer className="relative bg-gray-900 text-white py-12 mt-10">
       <div className="container mx-auto px-4">
         <div className="flex justify-center space-x-6 mb-4">
           {socialLinks.map((link) => (
