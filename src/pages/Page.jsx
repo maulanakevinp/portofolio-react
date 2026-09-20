@@ -3,6 +3,7 @@ import HeroSection from "../components/home/HeroSection";
 import ProfessionalJourney from "../components/home/ProfessionalJourney";
 import ProjectsFeatured from "../components/home/ProjectsFeatured";
 import StackOverview from "../components/home/StackOverview";
+import TechMarquee from "../components/home/TechMarque";
 import ScrollReveal from "../components/layouts/ScrollReveal";
 
 export default function Page() {
@@ -23,6 +24,9 @@ export default function Page() {
       <ScrollReveal className="page-reveal--third">
         <Education />
       </ScrollReveal>
+      {/* <ScrollReveal className="page-reveal--third">
+        <TechMarquee />
+      </ScrollReveal> */}
     </div>
   );
 }

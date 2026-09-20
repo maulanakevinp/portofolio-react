@@ -372,6 +372,26 @@
       transform: rotate(360deg);
     }
   }
+
+  .tech-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: tech-marquee 50s linear infinite;
+  }
+
+  .tech-marquee:hover .tech-marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes tech-marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @theme {
