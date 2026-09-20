@@ -1,3 +1,4 @@
+import Education from "../components/home/Education";
 import HeroSection from "../components/home/HeroSection";
 import ProfessionalJourney from "../components/home/ProfessionalJourney";
 import ProjectsFeatured from "../components/home/ProjectsFeatured";
@@ -18,6 +19,9 @@ export default function Page() {
       </ScrollReveal>
       <ScrollReveal className="page-reveal--third">
         <ProfessionalJourney />
+      </ScrollReveal>
+      <ScrollReveal className="page-reveal--third">
+        <Education />
       </ScrollReveal>
     </div>
   );
