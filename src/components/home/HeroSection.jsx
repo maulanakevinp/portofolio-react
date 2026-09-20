@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Badge from "../fragments/Badge";
+import moment from "moment";
 
 const roleText = "software_engineer.init()";
 
@@ -44,7 +45,7 @@ export default function HeroSection() {
           </span>
         </div>
         <p className="text-lg max-w-2xl mx-auto">
-          Software Engineer with 7+ years of experience in Laravel, ReactJS, microservices, SSO (SAML, Google SSO), and DevOps.
+          Software Engineer with {Number(moment().format("Y")) - 2019}+ years of experience in Laravel, ReactJS, microservices, SSO (SAML, Google SSO), and DevOps.
           Experienced in building enterprise systems for education, fintech, and government sectors. Familiar with Docker, CI/CD pipelines, Linux server administration, and API-driven architecture.
         </p>
         <div className="flex flex-col md:flex-row gap-5">

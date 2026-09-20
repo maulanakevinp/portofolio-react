@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export default function Footer() {
   const socialLinks = [
     { icon: 'linkedin', url: 'https://linkedin.com/in/maulanakevinp', label: 'LinkedIn' },
@@ -26,7 +28,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} Maulana Kevin Pradana. All rights reserved.</p>
+          <p>© {moment().format("Y")} Maulana Kevin Pradana. All rights reserved.</p>
         </div>
       </div>
     </footer>
