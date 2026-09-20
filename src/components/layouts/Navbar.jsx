@@ -53,7 +53,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="cursor-pointer md:hidden text-white hover:text-white/90 focus:outline-none"
+            className="cursor-pointer lg:hidden text-white hover:text-white/90 focus:outline-none"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isOpen ? (
@@ -65,7 +65,7 @@ export default function Navbar() {
           </button>
 
           {/* Desktop menu */}
-          <ul className="hidden md:flex space-x-8">
+          <ul className="hidden lg:flex space-x-8">
             {menu.map((item, key) => (
               <li key={key}>
                 <Link
@@ -81,22 +81,26 @@ export default function Navbar() {
         </div>
 
         {/* Mobile menu */}
-        {isOpen && (
-          <ul className="md:hidden pb-4 space-y-2">
-            {menu.map((item, key) => (
-              <li key={key}>
-                <Link
-                  to={item.url}
-                  target={item.target ?? "_self"}
-                  onClick={() => setIsOpen(false)}
-                  className={`block py-2 text-white hover:text-teal-300 transition`}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
+        <div className={`grid transition-all duration-300 ease-in-out overflow-hidden ${
+          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+        } `}>
+          <div className="overflow-hidden">
+            <ul className="pb-4 space-y-2">
+              {menu.map((item, key) => (
+                <li key={key}>
+                  <Link
+                    to={item.url}
+                    target={item.target ?? "_self"}
+                    onClick={() => setIsOpen(false)}
+                    className={`block py-2 text-white hover:text-teal-300 transition`}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
   );
