@@ -22,12 +22,12 @@ export default function Navbar() {
       name: "Tech"
     },
     {
-      url: "/#projects",
+      url: "/projects",
       name: "Projects"
     },
     {
-      url: "/#work-experiences",
-      name: "Work Experiences"
+      url: "/work-experiences",
+      name: "Experiences"
     },
     {
       url: "/storage/CV - Maulana Kevin Pradana.pdf",
@@ -37,7 +37,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full backdrop-blur border-b border-teal-700">
+    <nav className="w-full bg-gray-900/70 z-2 backdrop-blur border-b border-teal-700 sticky top-0">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="w-full flex justify-between items-center py-4">
           <div className='flex flex-row items-center gap-3'>
