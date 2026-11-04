@@ -3,7 +3,7 @@ export const WorkExperience = [
     title: "Software Engineer",
     company: "Universitas Islam Internasional Indonesia",
     img: "/img/icons/logo-uiii.png",
-    url: "https://uiii.ac.id",
+    url: "https://it.uiii.ac.id",
     period: "11/2022 - Present",
     worktype: "Fulltime",
     tasks: [
